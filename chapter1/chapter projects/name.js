@@ -1,5 +1,5 @@
-let myName = prompt("Enter your name:");
-console.log(myName);
+let myName = prompt("Enter your name: ");
+//console.log(myName);
 
 /*the above code 
 lets the user 

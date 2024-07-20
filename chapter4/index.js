@@ -143,55 +143,52 @@
 //         console.log(response5);
 // };
 
-let prize = Number(prompt("Select a number between 0 and 10: "));
+// let prize = Number(prompt("Select a number between 0 and 10: "));
 
-let message_out = "My Selection: ";
+// let message_out = "My Selection: ";
 
-switch(prize){
-    case 0:
-        response = " U get no reward ";
-        console.log(message_out + prize + response);
-        break;
-    case 1:
-        response = " U get 100 coins ";
-        console.log(message_out + prize + response);
-        break;
-    case 2:
-        response = " U get 200 coins ";
-        console.log(message_out + prize + response);
-        break;
-    case 3:
-        response = " U get 300 coins ";
-        console.log(message_out + prize + response);
-        break;
-    case 4:
-        response = " U get 400 coins";
-        console.log(message_out + prize + response);
-        break;
-    case 5:
-        response = " U get 500 coins";
-        console.log(message_out + prize + response);
-        break;
-    case 6:
-        response = " U get 600 coins";
-        console.log(message_out + prize + response);
-        break;
-    case 7:
-        response = " U get 700 coins";
-        console.log(message_out + prize + response);
-        break;
-    case 8:
-        response = " U get 800 coins";
-        console.log(message_out + prize + response);
-        break;
-    case 9:
-        response = " U get 900 coins ";
-        console.log(message_out + prize + response);
-        break;
-    default:
-        response = " U get 1000 coins ";
-        console.log(message_out + prize + response);
-}
-
-
-
+// switch(prize){
+//     case 0:
+//         response = " U get no reward ";
+//         console.log(message_out + prize + response);
+//         break;
+//     case 1:
+//         response = " U get 100 coins ";
+//         console.log(message_out + prize + response);
+//         break;
+//     case 2:
+//         response = " U get 200 coins ";
+//         console.log(message_out + prize + response);
+//         break;
+//     case 3:
+//         response = " U get 300 coins ";
+//         console.log(message_out + prize + response);
+//         break;
+//     case 4:
+//         response = " U get 400 coins";
+//         console.log(message_out + prize + response);
+//         break;
+//     case 5:
+//         response = " U get 500 coins";
+//         console.log(message_out + prize + response);
+//         break;
+//     case 6:
+//         response = " U get 600 coins";
+//         console.log(message_out + prize + response);
+//         break;
+//     case 7:
+//         response = " U get 700 coins";
+//         console.log(message_out + prize + response);
+//         break;
+//     case 8:
+//         response = " U get 800 coins";
+//         console.log(message_out + prize + response);
+//         break;
+//     case 9:
+//         response = " U get 900 coins ";
+//         console.log(message_out + prize + response);
+//         break;
+//     default:
+//         response = " U get 1000 coins ";
+//         console.log(message_out + prize + response);
+// }
