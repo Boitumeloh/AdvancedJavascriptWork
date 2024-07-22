@@ -27,14 +27,12 @@
 // addFourNumbers(...arr, ...arr2);//5 + 9+6+7
 //addFourNumbers(5, 9, 6, 7);
 
-
 /************ REST PEREMETER************** */
 
 // function someFunction(param1, ...param2) {
 //     console.log(param1, param2);
 //    }
 //    someFunction("hi", "there!", "How are you?");
-
 
 /************Returning function values ************** */
 // function addTwoNumbers(x, y) {
@@ -60,7 +58,6 @@
 //    }
 
 // console.log(addTwoNumbers(3,4));
-
 
 /************ Variable scope in functions************** */
 
@@ -201,5 +198,90 @@
 // let doingArrowStuff = x => console.log(x);
 // doingArrowStuff("Great!");
 
-const arr = ["squirrel", "alpaca", "buddy"];
-arr.forEach(e => console.log(e));
+// const arr = ["squirrel", "alpaca", "buddy"];
+// arr.forEach(e => console.log(e));
+
+/*****************Spread operator************/
+
+// let spread = ["so", "much", "fun"];
+// let message = ["JavaScript", "is", ...spread, "and", "very",
+//  "powerful"];
+
+//  console.log(message);
+
+// function addTwoNumbers(x, y) {
+//   console.log(x + y);
+// }
+// let arr = [5, 9];
+// addTwoNumbers(...arr);
+
+// function addFourNumbers(x, y, z, a) {
+//   console.log(x + y + z + a);
+// }
+// let arr = [5, 9];
+// let arr2 = [6, 7];
+// addFourNumbers(...arr, ...arr2);
+
+/*****************Rest parameter************/
+
+// function someFunction(param1, ...param2) {
+//   console.log(param1, param2);
+// }
+// someFunction("hi", "there!", "How are you?");
+
+/*****************Returning function values************/
+//let favoriteSubject = prompt("What is your favorite subject?");
+
+// function addTwoNumbers(x, y) {
+//   return x + y;
+// }
+// let result = addTwoNumbers(4, 5);
+// console.log(result);
+
+// let resultsArr = [];
+// for (let i = 0; i < 10; i++) {
+//   let result = addTwoNumbers(i, 2 * i);
+//   resultsArr.push(result);
+// }
+// console.log(resultsArr);
+
+//Exercise 6.4
+
+// let val1 = Number(prompt("1st: "));
+// let val2 = Number(prompt("2nd: "));
+
+// let opper = prompt('+ or -');
+// function calc(valu1,opp, valu2){
+//     let result;
+//     if(opp == "+"){
+//         result = valu1 + valu2;
+//     }else if(opp == "-"){
+//         result = valu1 - valu2;
+//     }else{
+//         result = valu1 + valu2;
+//     }
+//     console.log(result);
+// }
+
+// calc(val1,opper,val2);
+
+let arr = [];
+
+for(let i = 0; i<10; i++){
+    let valu1 = i*5;
+    let valu2 = i*i;
+
+    function calc(val1,val2){
+        return val1 + val2;
+    };
+    let response = calc(valu1,valu2);
+    arr.push(response);
+}
+
+console.log(arr);
+
+
+
+/*****************Spread operator************/
+
+/*****************Spread operator************/
