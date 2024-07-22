@@ -202,16 +202,168 @@ arr.forEach((e, 1) => {console.log("Printing stuff:", element, "on array positio
 // console.log(fixed_caps);
 
 //The start and end of a string
-let encouragement = "You are doing great, keep up the good work!";
-let bool_start = encouragement.startsWith("You");
-console.log(bool_start);
+// let encouragement = "You are doing great, keep up the good work!";
+// let bool_start = encouragement.startsWith("You");
+// console.log(bool_start);
 
-let bool_start2 = encouragement.startsWith("you");
-console.log(bool_start2);
+// let bool_start2 = encouragement.startsWith("you");
+// console.log(bool_start2);
+
+// let bool_start3 = encouragement.toLowerCase().startsWith("you");
+// console.log(bool_start3);
+
+// let bool_end = encouragement.endsWith("Something else");
+// console.log(bool_end);
 
 
-/*****************Working with index and positions******************** */
+/*****************Number methods******************** */
+// let x = 34;
+// console.log(isNaN(x));
+// console.log(!isNaN(x));
+// let str = "hi";
+// console.log(isNaN(str));
 
-/*****************Working with index and positions******************** */
+//Checking if something is finite
+// let x = 3;
+// let str = "finite";
+// console.log(isFinite(x));
+// console.log(isFinite(str));
+// console.log(isFinite(Infinity));
+// console.log(isFinite(10 / 0));
 
-/*****************Working with index and positions******************** */
+//Checking if something is an integer
+// let x = 3;
+// let str = "integer";
+// console.log(Number.isInteger(x));
+// console.log(Number.isInteger(str));
+// console.log(Number.isInteger(Infinity));
+// console.log(Number.isInteger(2.4));
+
+//Specifying a number of decimals
+// let x = 1.23456;
+// let newX = x.toFixed(2);
+// console.log(x, newX);
+// let x2 = 1.23456;
+// let newX2 = x.toFixed(3);
+// console.log(x, newX2);
+// let x = 1.23456;
+// let newX = x.toPrecision(2);
+// // let x = 1.23456;
+// // let newX = x.toPrecision(4);
+// console.log(newX);
+
+
+/*****************Math methods******************** */
+
+//Max and Min
+// let highest = Math.max(2, 56, 12, 1, 233, 4);
+// console.log(highest);
+
+// let lowest = Math.min(2, 56, 12, 1, 233, 4);
+// console.log(lowest);
+
+// //Square root and raising to the power of
+// let result = Math.sqrt(64);
+// console.log(result);
+
+// let result2 = Math.pow(5, 3);
+// console.log(result2);
+
+// //Turning decimals into integers
+// let x = 6.78;
+// let y = 5.34;
+// console.log("X:", x, "becomes", Math.round(x));
+// console.log("Y:", y, "becomes", Math.round(y));
+
+// console.log("X:", x, "becomes", Math.ceil(x));
+// console.log("Y:", y, "becomes", Math.ceil(y));
+
+// let negativeX = -x;
+// let negativeY = -y;
+// console.log("negativeX:", negativeX, "becomes", Math.ceil(negativeX));
+// console.log("negativeY:", negativeY, "becomes", Math.ceil(negativeY));
+
+// console.log("X:", x, "becomes", Math.floor(x));
+// console.log("Y:", y, "becomes", Math.floor(y));
+
+// console.log("negativeX:", negativeX, "becomes", Math.floor(negativeX));
+// console.log("negativeY:", negativeY, "becomes", Math.floor(negativeY));
+
+// console.log("X:", x, "becomes", Math.trunc(x));
+// console.log("Y:", y, "becomes", Math.trunc(y));
+
+//Exponent and logarithm
+
+// let x = 2;
+// let exp = Math.exp(x);
+// console.log("Exp:", exp);
+// let log = Math.log(exp);
+// console.log("Log:", log);
+
+
+/*****************Date methods******************** */
+//Creating dates
+
+// let currentDateTime = new Date();
+// console.log(currentDateTime);
+
+// let now2 = Date.now();
+// console.log(now2);
+
+// let milliDate = new Date(1000);
+// console.log(milliDate);
+
+// let stringDate = new Date("Sat Jun 05 2021 12:40:12 GMT+0200");
+// console.log(stringDate);
+
+// let specificDate = new Date(2022, 1, 10, 12, 10, 15, 100);
+// console.log(specificDate);
+
+//Methods to get and set the elements of a date
+// let d = new Date();
+// console.log("Day of week:", d.getDay());
+// console.log("Day of month:", d.getDate());
+// console.log("Month:", d.getMonth());
+// console.log("Year:", d.getFullYear());
+// console.log("Seconds:", d.getSeconds());
+// console.log("Milliseconds:", d.getMilliseconds());
+// console.log("Time:", d.getTime());
+
+// d.setFullYear(2010);
+// console.log(d);
+
+// d.setMonth(9);
+// console.log(d);
+
+// d.setDate(10);
+// console.log(d);
+
+// d.setHours(10);
+// console.log(d);
+
+// d.setTime(1622889770682);
+// console.log(d);
+
+//Parsing dates
+
+let d = new Date();
+
+let d1 = Date.parse("June 5, 2021");
+console.log(d1);
+
+let d2 = Date.parse("6/5/2021");
+console.log(d2);
+
+//Converting a date to a string
+
+console.log(d.toDateString());
+
+console.log(d.toLocaleDateString());
+
+/*****************Date methods******************** */
+
+/*****************Date methods******************** */
+
+/*****************Date methods******************** */
+
+/*****************Date methods******************** */
