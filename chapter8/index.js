@@ -142,8 +142,76 @@ arr.forEach((e, 1) => {console.log("Printing stuff:", element, "on array positio
 
 //Converting a string to an array
 
-let result = "Hello JavaScript";
-let arr_result = result.split(" ");
-console.log(arr_result);
+// let result = "Hello JavaScript";
+// let arr_result = result.split(" ");
+// console.log(arr_result);
 
-/*****************decodeUri() and encodeUri()******************** */
+// let favoriteFruits = "strawberry,watermelon,grapefruit";
+// let arr_fruits = favoriteFruits.split(",");
+// console.log(arr_fruits);
+
+//Converting an array to a string
+
+// let letters = ["a", "b", "c"];
+// let x = letters.join();
+// console.log(x);
+// x = letters.join('-');
+// console.log(x);
+
+
+//Working with index and positions
+//let poem = "Roses are red, violets are blue, if I can do JS, then you can too!";
+// let index_re = poem.indexOf("re");
+// console.log(index_re);
+// let indexNotFound = poem.indexOf("python");
+// console.log(indexNotFound);
+
+//Search
+// let searchStr = "When I see my fellow, I say hello";
+// let pos = searchStr.search("lo");
+// console.log(pos);
+// let notFound = searchStr.search("JavaScript");
+// console.log(notFound);
+
+// let lastIndex_re = poem.lastIndexOf("re");
+// console.log(lastIndex_re);
+
+// let pos1 = poem.charAt(10);
+// console.log(pos1);
+
+//Creating substrings
+// let str = "Create a substring";
+// let substr1 = str.slice(5);
+// let substr2 = str.slice(0,3);
+// console.log("1:", substr1);
+// console.log("2:", substr2);
+
+//Replacing parts of the string
+// let hi = "Hi buddy";
+// let new_hi = hi.replace("buddy", "Pascal");
+// console.log(hi);
+// console.log(new_hi);
+
+//Uppercase and lowercase 
+// let low_bye = "bye!";
+// let up_bye = low_bye.toUpperCase();
+// console.log(up_bye);
+
+// let caps = "HI HOW ARE YOU?";
+// let fixed_caps = caps.toLowerCase();
+// console.log(fixed_caps);
+
+//The start and end of a string
+let encouragement = "You are doing great, keep up the good work!";
+let bool_start = encouragement.startsWith("You");
+console.log(bool_start);
+
+let bool_start2 = encouragement.startsWith("you");
+console.log(bool_start2);
+
+
+/*****************Working with index and positions******************** */
+
+/*****************Working with index and positions******************** */
+
+/*****************Working with index and positions******************** */
