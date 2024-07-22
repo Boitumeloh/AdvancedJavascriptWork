@@ -101,25 +101,49 @@ arr.forEach((e, 1) => {console.log("Printing stuff:", element, "on array positio
 
 //Exercise 8.2
 
-let arr = [
-  "Laurence",
-  "Mike",
-  "Larry",
-  "Kim",
-  "Joanne",
-  "Laurence",
-  "Mike",
-  "Laurence",
-  "Mike",
-  "Laurence",
-  "Mike",
-];
-let  arr2 = arr.filter((value, index, array) => {
-  console.log(value, index, array.indexOf(value));
-  return array.indexOf(value) === index;
-});
-console.log(arr2);
+// let arr = [
+//   "Laurence",
+//   "Mike",
+//   "Larry",
+//   "Kim",
+//   "Joanne",
+//   "Laurence",
+//   "Mike",
+//   "Laurence",
+//   "Mike",
+//   "Laurence",
+//   "Mike",
+// ];
+// let arr2 = arr.filter((value, index, array) => {
+//   console.log(value, index, array.indexOf(value));
+//   return array.indexOf(value) === index;
+// });
+// console.log(arr2);
 
-/*****************Mapping the values of an array******************** */
+//exercise 8.3
+// const myArr = [1, 4, 5, 6];
+// const myArr1 = myArr.map(function (ele) {
+//   return ele * 2;
+// });
+// console.log(myArr1);
+// const myArr2 = myArr.map((ele) => ele * 2);
+// console.log(myArr2);
+
+
+/*****************String methods******************** */
+
+//Combining strings
+// let s1 = "Hello ";
+// let s2 = "JavaScript";
+// let result = s1.concat(s2);
+// console.log(s1);
+// console.log(s2);
+// console.log(result);
+
+//Converting a string to an array
+
+let result = "Hello JavaScript";
+let arr_result = result.split(" ");
+console.log(arr_result);
 
 /*****************decodeUri() and encodeUri()******************** */
