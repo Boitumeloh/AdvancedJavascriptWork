@@ -129,7 +129,6 @@ arr.forEach((e, 1) => {console.log("Printing stuff:", element, "on array positio
 // const myArr2 = myArr.map((ele) => ele * 2);
 // console.log(myArr2);
 
-
 /*****************String methods******************** */
 
 //Combining strings
@@ -157,7 +156,6 @@ arr.forEach((e, 1) => {console.log("Printing stuff:", element, "on array positio
 // console.log(x);
 // x = letters.join('-');
 // console.log(x);
-
 
 //Working with index and positions
 //let poem = "Roses are red, violets are blue, if I can do JS, then you can too!";
@@ -192,7 +190,7 @@ arr.forEach((e, 1) => {console.log("Printing stuff:", element, "on array positio
 // console.log(hi);
 // console.log(new_hi);
 
-//Uppercase and lowercase 
+//Uppercase and lowercase
 // let low_bye = "bye!";
 // let up_bye = low_bye.toUpperCase();
 // console.log(up_bye);
@@ -214,7 +212,6 @@ arr.forEach((e, 1) => {console.log("Printing stuff:", element, "on array positio
 
 // let bool_end = encouragement.endsWith("Something else");
 // console.log(bool_end);
-
 
 /*****************Number methods******************** */
 // let x = 34;
@@ -251,7 +248,6 @@ arr.forEach((e, 1) => {console.log("Printing stuff:", element, "on array positio
 // // let x = 1.23456;
 // // let newX = x.toPrecision(4);
 // console.log(newX);
-
 
 /*****************Math methods******************** */
 
@@ -300,7 +296,6 @@ arr.forEach((e, 1) => {console.log("Printing stuff:", element, "on array positio
 // let log = Math.log(exp);
 // console.log("Log:", log);
 
-
 /*****************Date methods******************** */
 //Creating dates
 
@@ -346,23 +341,145 @@ arr.forEach((e, 1) => {console.log("Printing stuff:", element, "on array positio
 
 //Parsing dates
 
-let d = new Date();
+// let d = new Date();
 
-let d1 = Date.parse("June 5, 2021");
-console.log(d1);
+// let d1 = Date.parse("June 5, 2021");
+// console.log(d1);
 
-let d2 = Date.parse("6/5/2021");
-console.log(d2);
+// let d2 = Date.parse("6/5/2021");
+// console.log(d2);
 
 //Converting a date to a string
 
-console.log(d.toDateString());
+// console.log(d.toDateString());
 
-console.log(d.toLocaleDateString());
-
-/*****************Date methods******************** */
+// console.log(d.toLocaleDateString());
 
 /*****************Date methods******************** */
+
+//Exercise 8.4
+// const val = "thIs will be capiTalized for each word";
+// function wordsCaps(str) {
+//   str = str.toLowerCase();
+//   const tempArr = [];
+//   let words = str.split(" ");
+//   words.forEach((word) => {
+//     let temp = word.slice(0, 1).toUpperCase() + word.slice(1);
+//     tempArr.push(temp);
+//   });
+//   return tempArr.join(" ");
+// }
+// console.log(wordsCaps(val));
+
+// //execrise 8.6
+
+// console.log(Math.ceil(5.7));
+// console.log(Math.floor(5.7));
+// console.log(Math.round(5.7));
+// console.log(Math.random());
+// console.log(Math.floor(Math.random() * 11)); // 0-10
+// console.log(Math.floor(Math.random() * 10) + 1); // 1-10;
+// console.log(Math.floor(Math.random() * 100) + 1); // 1-100;
+// function ranNum(min, max) {
+//   return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
+// for (let x = 0; x < 100; x++) {
+//   console.log(ranNum(1, 100));
+// }
+
+// let future = new Date(2025, 5, 15);
+// console.log(future);
+// const months = [
+//   "January",
+//   "February",
+//   "March",
+//   "April",
+//   "May",
+//   "June",
+//   "July",
+//   "August",
+//   "September",
+//   "October",
+//   "November",
+//   "December",
+// ];
+// let day = future.getDate();
+// let month = future.getMonth();
+// le;
+
+// let future = new Date(2025, 5, 15);
+// console.log(future);
+// const months = [
+//   "January",
+//   "February",
+//   "March",
+//   "April",
+//   "May",
+//   "June",
+//   "July",
+//   "August",
+//   "September",
+//   "October",
+//   "November",
+//   "December",
+// ];
+// let day = future.getDate();
+// let month = future.getMonth();
+// let year = future.getFullYear();
+// let myDate = `${months[month - 1]} ${day} ${year}`;
+// console.log(myDate);
+
+// let str = "JavaScript";
+
+// function scramble(val) {
+//   let max = val.length;
+//   let temp = "";
+//   for (let i = 0; i < max; i++) {
+//     console.log(val.length);
+//     let index = Math.floor(Math.random() * val.length);
+//     temp += val[index];
+//     console.log(temp);
+//     val = val.substr(0, index) + val.substr(index + 1);
+//     console.log(val);
+//   }
+//   return temp;
+// }
+// console.log(scramble(str));
+
+// const endDate = "Sept 1 2022";
+// function countdown() {
+//   const total = Date.parse(endDate) - new Date();
+//   const days = Math.floor(total / (1000 * 60 * 60 * 24));
+//   const hrs = Math.floor((total / (1000 * 60 * 60)) % 24);
+//   const mins = Math.floor((total / 1000 / 60) % 60);
+//   const secs = Math.floor((total / 1000) % 60);
+//   return {
+//     days,
+//     hrs,
+//     mins,
+//     secs,
+//   };
+// }
+// function update() {
+//   const temp = countdown();
+//   let output = "";
+//   for (const property in temp) {
+//     output += `${property}: ${temp[property]} `;
+//   }
+//   console.log(output);
+//   setTimeout(update, 1000);
+// }
+// update();
+
+/*****************Date methods******************** */
+// let val = "I love JavaScript";
+// val = val.toLowerCase();
+// let vowels = ["a", "e", "i", "o", "u"];
+// vowels.forEach((letter, index) => {
+//   console.log(letter);
+//   val = val.replaceAll(letter, index);
+// });
+// console.log(val);
 
 /*****************Date methods******************** */
 
