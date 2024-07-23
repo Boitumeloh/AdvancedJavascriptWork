@@ -108,4 +108,7 @@ function change() {
 }
 
 //Toggling classes
+
+
+
 /********************This and the DOM************************** */
