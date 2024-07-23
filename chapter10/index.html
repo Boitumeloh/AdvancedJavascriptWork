@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dynamic Element Manipulation Using the DOM</title>
 
-    <style>
+    <!-- <style>
       /* div {
         height: 30px;
         width: 30px;
@@ -15,15 +15,18 @@
       /* .hide {
         display: none;
       } */
-      .square {
+      div {
         height: 100px;
         width: 100px;
         background-color: yellow;
       }
-      .square.blue {
+      /* .square.blue {
         background-color: blue;
+      } */
+      .circle {
+        border-radius: 50%;
       }
-    </style>
+    </style> -->
   </head>
   <body>
     <!-- <h1>Let's find the treasure</h1>
@@ -64,10 +67,16 @@
     <div id="indigo"></div>
     <div id="violet"></div>
     <button onclick="rainbowify()">Make me a rainbow</button> -->
-    <div id="shape" class="square blue"></div>
+    <!-- <div id="shape" class="square blue"></div> -->
 
     <!-- <button onclick="disappear()">Disappear!</button> -->
-    <button onclick="change()">Change!</button>
+    <!-- <button onclick="change()">Change!</button> -->
+    <!-- <button onclick="changeVisibility()">Magic!</button> -->
+    <!-- <button onclick="changeAttr()">Change attributes...</button> -->
+
+    <!-- <div id="square" style="width:100px;height:100px; background-color:grey;">Click for magic</div> -->
+
+    <button onclick="addRandomNumber()">Add a number</button>
 
     <script src="index.js"></script>
   </body>
