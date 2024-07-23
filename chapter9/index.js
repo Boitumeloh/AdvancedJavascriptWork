@@ -17,13 +17,16 @@
 // console.dir(location);
 
 /****************THE DOM************** */
-console.dir(document);
+// console.dir(document);
 
-const e1 = document.querySelector("h1");
-console.dir(e1);
+// const e1 = document.querySelector("h1");
+// console.dir(e1);
 
-const alle = document.querySelectorAll(".output");
-console.log(alle);
+// const alle = document.querySelectorAll(".output");
+// console.log(alle);
+
+console.log(window.location.protocol);
+console.log(window.location.href);
 
 /****************LOCATION OBJECT************** */
 
