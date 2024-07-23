@@ -103,12 +103,44 @@
 // }
 //removing
 
-function change() {
-  document.getElementById("shape").classList.remove("blue");
-}
+// function change() {
+//   document.getElementById("shape").classList.remove("blue");
+// }
 
 //Toggling classes
 
+// function changeVisibility() {
+//   document.getElementById("shape").classList.toggle("hide");
+// }
 
+/********************Manipulating attributes************************** */
 
-/********************This and the DOM************************** */
+// function changeAttr() {
+//   let el = document.getElementById("shape");
+//   el.setAttribute("style", "background-color:red;border:1px solid black");
+//   el.setAttribute("id", "new");
+//   el.setAttribute("class", "circle");
+// }
+
+/********************Event listeners on elements************************** */
+// window.onload = function() {
+//     document.getElementById("square").addEventListener("click",
+//    changeColor);
+//     }
+// function changeColor() {
+//   let red = Math.floor(Math.random() * 256);
+//   let green = Math.floor(Math.random() * 256);
+//   let blue = Math.floor(Math.random() * 256);
+//   this.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
+// }
+
+/********************Creating new elements************************** */
+function addRandomNumber() {
+  let el = document.createElement("p");
+  el.innerText = Math.floor(Math.random() * 100);
+  document.body.appendChild(el);
+}
+
+/********************Manipulating attributes************************** */
+
+/********************Manipulating attributes************************** */
