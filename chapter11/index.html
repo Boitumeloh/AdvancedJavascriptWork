@@ -4,6 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Interactive Content and Event Listeners</title>
+
+    <!-- <style>
+      div {
+        border: 1px solid black;
+        margin-left: 5px;
+      }
+    </style> -->
+    <style>
+      .box {
+        height: 200px;
+        width: 200px;
+        padding: 20px;
+        margin: 0 50px;
+        display: inline-block;
+        border: 1px solid black;
+      }
+      #dragme {
+        background-color: red;
+      }
+    </style>
   </head>
   <body>
     <!-- <p id="unique" >Click here for magic!</p> -->
@@ -11,12 +31,60 @@
 
     <!-- <button type="button" onclick="triggerSomething()">Click</button> -->
 
-    <div id="welcome">Hi there!</div>
+    <!-- <div id="welcome">Hi there!</div>
     <form>
       <input type="text" name="firstname" placeholder="First name" />
       <input type="text" name="lastname" placeholder="Last name" />
       <input type="button" onclick="sendInfo()" value="Submit" />
-    </form>
+    </form> -->
+
+    <!-- <div id="message">Bubbling events</div>
+    <div id="output">
+      1
+      <div>
+        2
+        <div>
+          3
+          <div>
+            4
+            <div>
+                5
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div id="welcome">Hi there!</div>
+    <form>
+      <input
+        type="text"
+        name="firstname"
+        placeholder="First name"
+        onchange="logEvent()"
+      />
+      <input
+        type="text"
+        name="lastname"
+        placeholder="Last name"
+        onblur="logEvent()"
+      />
+      <input type="button" onclick="sendInfo()" value="Submit" />
+    </form> -->
+    <!-- <div id="wrapper">JavaScript is fun!</div>
+    <input type="text" name="myNum1" onkeypress=" return numCheck()" onpaste="return false" />
+    <input type="text" name="myNum2" onkeypress=" return numCheck2()" onpaste="return false" /> -->
+
+    <!-- <div class="box">1</div>
+    <div class="box">2</div> -->
+
+    <div class="box" ondrop="dDrop()" ondragover="nDrop()">
+        1
+        <div id="dragme" ondragstart="dStart()" draggable="true">
+        Drag Me Please!
+        </div>
+        </div>
+       <div class="box" ondrop="dDrop()" ondragover="nDrop()">2</div> 
     <script src="index.js"></script>
   </body>
 </html>

@@ -49,19 +49,75 @@
 //   console.dir(event.target);
 // }
 
-function sendInfo() {
-  let p = event.target.parentElement;
-  message("Welcome " + p.firstname.value + " " + p.lastname.value);
-}
+// function sendInfo() {
+//   let p = event.target.parentElement;
+//   message("Welcome " + p.firstname.value + " " + p.lastname.value);
+// }
 
-function message(m) {
-  document.getElementById("welcome").innerHTML = m;
-}
+// function message(m) {
+//   document.getElementById("welcome").innerHTML = m;
+// }
 
 /**********************DOM EVENT FLOW************************ */
 
-/**********************ONLOAD EVENT HANDLERS************************ */
+// function bubble() {
+//   console.log(this.innerText);
+// }
+// let divs = document.getElementsByTagName("div");
+// for (let i = 0; i < divs.length; i++) {
+//   divs[i].addEventListener("click", bubble);
+// }
 
-/**********************ONLOAD EVENT HANDLERS************************ */
+/**********************onchange and onblur************************ */
+// function logEvent() {
+//   let p = event.target;
+//   if (p.name == "firstname") {
+//     message("First Name Changed to " + p.value);
+//   } else {
+//     message("Last Name Changed to " + p.value);
+//   }
+// }
+// function sendInfo() {
+//   let p = event.target.parentElement;
+//   message("Welcome " + p.firstname.value + " " + p.lastname.value);
+// }
+// function message(m) {
+//   document.getElementById("welcome").innerHTML = m;
+// }
 
-/**********************ONLOAD EVENT HANDLERS************************ */
+/**********************KEY EVENT HANDLERS************************ */
+// function numCheck() {
+//   message("Number: " + !isNaN(event.key));
+//   return !isNaN(event.key);
+// }
+// function numCheck2() {
+//   message("Not a number: " + isNaN(event.key));
+//   return isNaN(event.key);
+// }
+// function message(m) {
+//   document.getElementById("wrapper").innerHTML = m;
+// }
+
+/**********************Drag and drop elements************************ */
+
+let holderItem;
+function dStart() {
+  holderItem = event.target;
+}
+function nDrop() {
+  event.preventDefault();
+}
+function dDrop() {
+  event.preventDefault();
+  if (event.target.className == "box") {
+    event.target.appendChild(holderItem);
+  }
+}
+
+/**********************FORM SUBMISSION************************ */
+
+/**********************Drag and drop elements************************ */
+
+/**********************Drag and drop elements************************ */
+
+/**********************Drag and drop elements************************ */
