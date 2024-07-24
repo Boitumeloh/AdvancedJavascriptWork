@@ -7,7 +7,9 @@ const newInput = document.getElementById("addFriend");
 const output = document.getElementById("output");
 
 addNew.onclick = function () {
-  const newFriend = newInput.value;
+  const newFriend = newInput.value
+  
+  ;
   adder(newFriend, myArray.length, 0);
   myArray.push(newFriend);
 };
