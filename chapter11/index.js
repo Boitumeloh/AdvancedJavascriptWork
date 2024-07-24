@@ -100,23 +100,55 @@
 
 /**********************Drag and drop elements************************ */
 
-let holderItem;
-function dStart() {
-  holderItem = event.target;
-}
-function nDrop() {
-  event.preventDefault();
-}
-function dDrop() {
-  event.preventDefault();
-  if (event.target.className == "box") {
-    event.target.appendChild(holderItem);
-  }
-}
+// let holderItem;
+// function dStart() {
+//   holderItem = event.target;
+// }
+// function nDrop() {
+//   event.preventDefault();
+// }
+// function dDrop() {
+//   event.preventDefault();
+//   if (event.target.className == "box") {
+//     event.target.appendChild(holderItem);
+//   }
+// }
 
 /**********************FORM SUBMISSION************************ */
+// function valForm() {
+//   var p = event.target.children;
+//   //conditions makes all 3 fields required
+//   if (p.firstName.value == "") {
+//     message("Need a first name!!");
+//     return false;
+//   }
+//   if (p.lastName.value == "") {
+//     message("Need a last name!!");
+//     return false;
+//   }
+//   if (p.age.value == "") {
+//     message("Need an age!!");
+//     return false;
+//   }
+//   return true;
+// }
+// function message(m) {
+//   document.getElementById("wrapper").innerHTML = m;
+// }
 
-/**********************Drag and drop elements************************ */
+/**********************Animating elements************************ */
+function toTheRight() {
+  let b = document.getElementById("block");
+  let x = 0;
+  setInterval(function () {
+    if (x === 600) {
+      clearInterval();
+    } else {
+      x++;
+      b.style.left = x + "px";
+    }
+  }, 2);
+}
 
 /**********************Drag and drop elements************************ */
 
