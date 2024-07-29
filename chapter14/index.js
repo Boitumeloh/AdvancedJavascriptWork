@@ -74,14 +74,77 @@
 
 //Adding and uploading images to the canvas
 
-window.onload = function () {
-  let canvas = document.getElementById("c1");
-  canvas.height = 300;
-  canvas.width = 300;
-  let ctx = canvas.getContext("2d");
-  let myImage = document.getElementById("flower");
-  ctx.drawImage(myImage, 10, 10);
-};
+// window.onload = function () {
+//   let canvas = document.getElementById("c1");
+//   canvas.height = 300;
+//   canvas.width = 300;
+//   let ctx = canvas.getContext("2d");
+//   let myImage = document.getElementById("flower");
+//   ctx.drawImage(myImage, 10, 10);
+// };
+
+// let canvas1 = document.getElementById("canvas1");
+//  let ctx1 = canvas1.getContext("2d");
+//  ctx1.strokeRect(5, 5, 150, 100);
+//  let canvas2 = document.getElementById("canvas2");
+//  let ctx2 = canvas2.getContext("2d");
+//  ctx2.beginPath();
+//  ctx2.arc(60, 60, 20, 0, 2 * Math.PI);
+//  ctx2.stroke();
+//  let canvas3 = document.getElementById("canvas3");
+//  let ctx3 = canvas3.getContext("2d");
+//  ctx3.drawImage(canvas1, 10, 10);
+//  ctx3.drawImage(canvas2, 10, 10);
+
+// let canvas = document.getElementById("canvas");
+// let ctx = canvas.getContext("2d");
+// let imgLoader = document.getElementById("imgLoader");
+// imgLoader.addEventListener("change", upImage, false);
+// function upImage() {
+//   let fr = new FileReader();
+//   fr.readAsDataURL(event.target.files[0]);
+//   fr.onload = function (e) {
+//     let img = new Image();
+//     img.src = event.target.result;
+//     img.onload = function () {
+//       canvas.width = img.width;
+//       canvas.height = img.height;
+//       ctx.drawImage(img, 0, 0);
+//     };
+//     console.log(fr);
+//   };
+// }
+
+//ADDING ANIMATIONS
+// window.onload = init;
+// var canvas = document.getElementById("canvas");
+// var ctx = canvas.getContext("2d");
+// canvas.height = 500;
+// canvas.width = 500;
+// var pos = {
+//   x: 0,
+//   y: 50,
+// };
+// function init() {
+//   draw();
+// }
+// function draw() {
+//   pos.x = pos.x + 5;
+//   if (pos.x > canvas.width) {
+//     pos.x = 0;
+//   }
+//   if (pos.y > canvas.height) {
+//     pos.y = 0;
+//   }
+//   ctx.fillRect(pos.x, pos.y, 100, 100);
+//   window.setTimeout(draw, 50);
+// }
+
+//Drawing on canvas with a mouse
+let canvas = document.getElementById("canvas");
+let ctx = canvas.getContext("2d");
+canvas.width = 700;
+canvas.height = 700;
 
 /*****************Getting position data with GeoLocation********************** */
 
