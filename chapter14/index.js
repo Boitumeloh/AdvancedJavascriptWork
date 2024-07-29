@@ -141,12 +141,32 @@
 // }
 
 //Drawing on canvas with a mouse
-let canvas = document.getElementById("canvas");
-let ctx = canvas.getContext("2d");
-canvas.width = 700;
-canvas.height = 700;
+// let canvas = document.getElementById("canvas");
+// let ctx = canvas.getContext("2d");
+// canvas.width = 700;
+// canvas.height = 700;
 
-/*****************Getting position data with GeoLocation********************** */
+//Saving dynamic images
+// const canvas = document.getElementById("canvas");
+// const ctx = canvas.getContext("2d");
+// canvas.width = 200;
+// canvas.height = 200;
+// const penColor = document.getElementById("squareColor");
+// penColor.addEventListener("change", function () {
+//   color = event.target.value;
+//   draw(color);
+// });
+// document.getElementById("save").addEventListener("click", function () {
+//   let dataURL = canvas.toDataURL();
+//   document.getElementById("holder").src = dataURL;
+// });
+// function draw(color) {
+//   ctx.fillStyle = color;
+//   ctx.fillRect(70, 70, 100, 100);
+// }
+
+/*****************Media on the page********************** */
+
 
 /*****************DYNAMIC CANVAS********************* */
 
