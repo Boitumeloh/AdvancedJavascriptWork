@@ -84,3 +84,39 @@
 //         return "That's a wonderful " + object + ", " + name;
 //         }
 // };
+
+//Exercise 7.1
+
+// class Person{
+//     constructor(firstName,lastName){
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//     }
+// };
+
+// let obj = new Person("Boitumelo","Lefophane");
+// let obj2 = new Person("Vukosi","Djija");
+// console.log(obj.firstName);
+// console.log(obj2.lastName);
+
+//Exercise 7.2
+class Person{
+    constructor(firstName,lastName){
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    fullName(){
+        return this.firstName +" "+ this.lastName;
+    };
+};
+
+let obj = new Person("Boitumelo","Lefophane");
+let obj2 = new Person("Vukosi","Djija");
+console.log(obj.fullName());
+
+
+
+
+
+
