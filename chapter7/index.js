@@ -1,5 +1,5 @@
 "use strict";
-// let dog = { 
+// let dog = {
 //     dogName: "JavaScript",
 //     weight: 2.4,
 //     color: "brown",
@@ -15,7 +15,6 @@
 
 // let obj = new ClassName("arg1", "arg2");
 
-
 //Functions
 // function Dog(dogName, weight, color, breed) {
 //     this.dogName = dogName;
@@ -23,9 +22,8 @@
 //     this.color = color;
 //     this.breed = breed;
 // };
-//object.   
+//object.
 //let dog  = new Dog("Jacky", 30, "brown", "labrador");
-
 
 //class
 // class Dog {
@@ -100,23 +98,38 @@
 // console.log(obj2.lastName);
 
 //Exercise 7.2
-class Person{
-    constructor(firstName,lastName){
-        this.firstName = firstName;
-        this.lastName = lastName;
-    }
+// class Person{
+//     constructor(firstName,lastName){
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//     }
 
-    fullName(){
-        return this.firstName +" "+ this.lastName;
-    };
-};
+//     fullName(){
+//         return this.firstName +" "+ this.lastName;
+//     };
+// };
 
-let obj = new Person("Boitumelo","Lefophane");
-let obj2 = new Person("Vukosi","Djija");
-console.log(obj.fullName());
+// let obj = new Person("Boitumelo","Lefophane");
+// let obj2 = new Person("Vukosi","Djija");
+// console.log(obj.fullName());
 
+//Exercise 7.3
 
+// class Sounds {
+//   constructor(animal, sound) {
+//     this.animal = animal;
+//     this.sound = sound;
+//   }
+//   speak() {
+//     console.log(this.animal + " " + this.sound);
+//   }
+// }
 
-
-
-
+// Sounds.prototype.eat = function () {
+//   return this.animal ;
+// }
+// let cat = new Sounds("cat", "meow");
+// let dog = new Sounds("dog", "bark");
+// cat.speak();
+// console.log(dog.eat());
+// console.log(dog);
