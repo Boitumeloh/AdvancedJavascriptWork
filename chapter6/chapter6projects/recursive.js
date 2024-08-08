@@ -1,11 +1,11 @@
-function recursive(num) {
+const main = function recursive(num) {
   console.log(num);
   if (num < 10) {
     return  recursive(num+1);
   }
   return;
 }
-console.log(recursive(0));
+console.log(main(0));
 
 // const main = function counter(i) {
 //   console.log(i);
