@@ -41,12 +41,45 @@
 // }
 
 //Exercise 12.3
-function create(){
-    let lastOne= "";
-    for(let i=0; i<arguments.length;i++){
-        lastOne = arguments[i];
+// function create(){
+//     let lastOne= "";
+//     for(let i=0; i<arguments.length;i++){
+//         lastOne = arguments[i];
+//     }
+//     return lastOne;
+// }
+
+// console.log(create(29,24,43));
+
+//Exercise 12.4
+// let val = 5;
+// val += adder();
+// val += adder();
+// val += adder();
+// console.log(val);
+// function adder() {
+//   let counter = val;
+//   for (let i = 0; i < val; i++) {
+//     counter++;
+//   }
+//   return counter;
+// }
+
+//Exercise 12.5
+function checker(val){
+    try{
+        if (isNaN(val)){
+            throw "is not a number";
+        }else{
+            console.log("Got a number");
+            
+        }
+    }catch (e) {
+        console.error(e);
+    }finally{
+        console.log("Done "+ val);
     }
-    return lastOne;
 }
 
-console.log(create(29,24,43));
+checker("b");
+checker(20);
