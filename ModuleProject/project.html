@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Note Keeper</title>
+    <style>
+      /* Basic styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      .note-container {
+        margin-bottom: 20px;
+      }
+      #chatbot {
+        border: 1px solid #ddd;
+        padding: 10px;
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Personal Note Keeper</h1>
+    <div class="note-container">
+      <form id="noteForm">
+        <input type="text" id="noteTitle" placeholder="Note Title" required />
+        <textarea
+          id="noteContent"
+          placeholder="Note Content"
+          required
+        ></textarea>
+        <button type="submit">Add Note</button>
+      </form>
+      <div id="notesList"></div>
+    </div>
+    <div id="chatbot">
+      <h2>Chatbot</h2>
+      <div id="chatMessages"></div>
+      <input
+        type="text"
+        id="chatInput"
+        placeholder="Ask me about your notes..."
+      />
+      <button id="chatSend">Send</button>
+    </div>
+
+    <script src="project.js"></script>
+  </body>
+</html>
