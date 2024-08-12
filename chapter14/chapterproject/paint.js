@@ -13,7 +13,7 @@ const mLoc = {
   lastY: 0,
 };
 canvas.style.border = "1px solid black";
-btnSave.addEventListener("click", saveImg);
+btnSantLve.addEveistener("click", saveImg);
 btnClear.addEventListener("click", clearCanvas);
 canvas.addEventListener("mousemove", (e) => {
   mLoc.lastX = mLoc.x;
